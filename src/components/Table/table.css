@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.table-container {
+  width: 1722px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.row {
+  position: relative;
+  height: 59px;
+  border-top: 1px solid #e2e2e2;
+}
+
+.main-row-item {
+  display: inline-block;
+  position: absolute;
+  height: 15px;
+  color: #39628d;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+
+.row-item {
+  display: inline-block;
+  position: absolute;
+  height: 15px;
+  font-family: Montserrat;
+  color: #39628d;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+
+.checkbox-select {
+  box-sizing: border-box;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #dadada;
+  background-color: #d8d8d8;
+  position: absolute;
+  top: 21px;
+  left: 20px;
+}
+
+.type {
+  top: 22px;
+  left: 56px;
+  height: 24px;
+  width: 34px;
+  border-radius: 1px;
+  color: #354069;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
+}
+
+.name {
+  top: 22px;
+  left: 270px;
+}
+
+.email {
+  top: 22px;
+  left: 569px;
+}
+
+.telephone {
+  top: 22px;
+  left: 964px;
+}
+
+.status {
+  top: 22px;
+  right: 32px;
+}
+
+.co {
+  background-color: #8a98ca;
+}
+
+.cr {
+  background-color: #f2ac57;
+}
+
+.su {
+  background-color: #b9e5e5;
+}
+
+.em {
+  background-color: #e17878;
+}
+
+.row-container:hover {
+  cursor: pointer;
+  background-color: rgba(57,98,141,0.05);
+  font-weight: bold;
+}

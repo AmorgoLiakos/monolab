@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+
+.top-part-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1678px;
+  margin: 0 auto 16px;
+}
+
+.users-container,
+.selected-info-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-title {
+  width: 51px;
+  height: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #22242a;
+  margin-left: 12px;
+}
+
+.selected-number {
+  width: 100%;
+  height: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 500;
+  color: #808080;
+  margin-right: 24px;
+}
