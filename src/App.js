@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import axios from "axios"
 import "./style.css"
 
@@ -14,11 +14,13 @@ const App = () => {
 
   const [Users, setUsers] = useState([])
 
-  axios.get("https://ilias.users.challenge.dev.monospacelabs.com/users")
-  .then(res => {
-    const users = res.data
-    setUsers(users)    
-  })
+  useEffect(()=>{
+      axios.get("https://ilias.users.challenge.dev.monospacelabs.com/users")
+    .then(res => {
+      const users = res.data
+      setUsers(users)    
+    })
+  }, [])
 
   return (
   <SelectedContext.Provider value={[countSelected, setCountSelected]}>

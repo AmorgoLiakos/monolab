@@ -31,7 +31,7 @@ const Row = ({ type, name, email, telephone, status, id }) => {
 
   const toggleStatus = () => {
 
-    let userToChangeStatus = {...Users.filter(x => x.id == id)}
+    let userToChangeStatus = {...Users.filter(x => x.id === id)}
     let url = "https://ilias.users.challenge.dev.monospacelabs.com/users/" + id
     
     if(userToChangeStatus[0].active){
