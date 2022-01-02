@@ -3,37 +3,12 @@ import Row from "./row"
 import "./table.css"
 
 import SelectedContext from "../../context/selectedContext"
-
-const Users = [
-  {
-    id: "1",
-    type: "CO",
-    name: "Jean Richarson",
-    email: "jblack@plambee.mil",
-    telephone: "2-(373)278-1237",
-    active: true
-  },
-  {
-    id: 2,
-    type: "CR",
-    name: "Brian Lucas",
-    email: "jrose@thoughtstorm.mil",
-    telephone: "4-(844)505-5484",
-    active: false
-  },
-  {
-    id: 3,
-    type: "SU",
-    name: "Janet Flower",
-    email: "marnold@edgeclub.mil",
-    telephone: "5-(729)277-3698",
-    active: true
-  }
-]
+import UsersContext from "../../context/usersContext"
 
 const Table = () => {
 
   const [countSelected, setCountSelected] = useContext(SelectedContext)
+  const [Users, setUsers] = useContext(UsersContext)
 
   const toggleMainCheckbox = (e) => {
     const checkboxes = document.getElementsByClassName("checkbox")
@@ -76,8 +51,9 @@ const Table = () => {
           type={x.type}
           name={x.name}
           email={x.email}
-          telephone={x.telephone}
+          telephone={x.phone}
           status={x.active}
+          id={x.id}
         />
       })}
     </div>
